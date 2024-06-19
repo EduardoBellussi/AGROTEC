@@ -106,7 +106,7 @@ video {
     align-items: center;
     justify-content: center;
     width: 512px;
-    height: 420px;
+    height: 450px;
     overflow: hidden;
     z-index: 2;
 }

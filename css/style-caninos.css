@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    overflow-x: hidden;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .intro {
@@ -33,6 +30,35 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.submenu-produtos {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover{
+    background-color: #70a470;
+    color: white;
+}
+
+.submenu-produtos:hover .submenu {
+    display: block;
 }
 
 .main {
@@ -113,24 +139,59 @@ nav a {
 
 .main-content {
     margin: 50px;
-    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-    margin-bottom: 0;
+    justify-content: center;
+    width: 90%;
 }
 
 .produto {
-    width: 30%; 
+    width: 20%; 
     border: 1px solid #ddd;
     padding: 20px;
-    margin-bottom: 20px;
-    margin-right: 40px; 
+    margin: auto;
+    margin-right: 40px;
+    margin-left: 40px; 
 }
 
 .produto img {
-    max-width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.produto h3 {
     height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+.produto p {
+    height: auto;
+    display: flex;
+    text-align: justify;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.produto button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d895d;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+}
+
+.produto button:hover {
+    background-color: #70a470;
 }
 
 footer {
@@ -140,6 +201,7 @@ footer {
     padding: 30px;
     position: relative;
     width: 100%;
+
     display: flex;
     text-align: center;
     justify-content: center;
@@ -166,6 +228,10 @@ footer {
 .footer-direito ul i {
     margin-right: 20px;
     font-size: 20px;
+}
+.footer-direito ul li {
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .footer-direito-h4{

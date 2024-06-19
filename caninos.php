@@ -16,25 +16,29 @@
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
     </section>
@@ -44,25 +48,29 @@
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao1-cao-produto.png" alt="Ração para Cães">
             <h3>Magnus Todo Dia Carne <br> Cães Adultos</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
+            <!--  -->
         </div>
 
     </section>

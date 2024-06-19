@@ -145,6 +145,9 @@ nav a {
 }
 
 .produto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 20%; 
     border: 1px solid #ddd;
     padding: 20px;
@@ -192,6 +195,11 @@ nav a {
 
 .produto button:hover {
     background-color: #70a470;
+}
+
+.produto button a{
+    text-decoration: none;
+    color: white;
 }
 
 footer {

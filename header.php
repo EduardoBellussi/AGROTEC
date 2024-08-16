@@ -11,7 +11,6 @@
                     <div class="submenu">
                         <a href="caninos.php">Caninos</a>
                         <a href="felinos.php">Felinos</a>
-                        <a href="#">Equinos</a>
                     </div>
                 </li>
                 <li><a href="sobrenos.php">Sobre Nós</a></li>

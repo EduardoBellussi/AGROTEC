@@ -1,13 +1,14 @@
 <?php
-	$host = "localhost";
-	$usuario = "root";
-	$senha = ""; 
-	$database = "agrotec"; 
+$host = "localhost";
+$usuario = "root";
+$senha = ""; 
+$database = "agrotec";
 
-	
-	$connection = new mysqli($host, $usuario, $senha, $database);
-	
-	if ($connection->connect_error) {
-	    die("Falha de conexão: " . $connection->connect_error);
-	}
+// Criar conexão
+$conexao = new mysqli($host, $usuario, $senha, $database);
+
+// Verificar conexão
+if ($conexao->connect_error) {
+    die("Falha de conexão: " . $conexao->connect_error);
+}
 ?>

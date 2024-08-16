@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 body {
     font-family: "Poppins", sans-serif;
@@ -61,7 +60,6 @@ header {
 .submenu-produtos:hover .submenu {
     display: block;
 }
-
 
 .main {
     display: flex;
@@ -133,131 +131,125 @@ nav a {
 }
 
 .container {
-    margin: 40px;
+    max-width: 100%;
+    margin: 40px auto;
     padding: 50px;
-    margin-top: -20px;
-}
-
-.texto-icon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.icon img {
-    width: 150px;
-}
-
-.texto {
-    flex: 1;
-    margin-left: 30px;
-}
-
-.texto h2 {
-    color: #1e8449;
-}
-
-.texto p {
-    text-align: justify;
-}
-
-.slogan h1{
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 80%;
-    font-size: 30px;
-    font-family: "Cinzel Decorative", serif;
-    padding: 20px;
-    color: #1e8449;
-    font-weight: 700;
+    margin: 30px auto;
+    background-color: #fff;
 }
 
-.slogan {
-    margin: -20px;
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-section {
-    margin: 10px;
-    padding: 30px;
-    margin-top: -20px;
-}
-
-.section-titulo h3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #5d895d;
-    margin-bottom: 0;
-}
-
-.members {
-    display: flex;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 0;
-}
-
-.coluna {
-    width: 50%;
-    padding: 30px;
-    display: inline-block; 
-    box-sizing: border-box; 
-}
-
-.card {
-    padding: 30px; 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px;
-}
-
-.card .imagem-card {
-    width: 6em; 
-    height: 6em; 
-    border-radius: 50%;
-    margin: 0 auto 1em auto;
+.product-info {
     overflow: hidden;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 50%;
+.product-image {
+    float: left;
+    width: 300px; 
+    margin-right: 10%; 
 }
 
-.card h3 {
-    font-weight: 500; 
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
 }
 
-.card p {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 30px;
-    letter-spacing: 2px;
+.product-description {
+    overflow: hidden; 
+    margin-left: 50px;
 }
 
-.card a {
+.preço .preco-antigo {
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+.preço .preco-novo {
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.product-description button {
+    background-color: #5d895d;
+    border: 0;
+    padding: 17px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-description button:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+.product-description button a {
+    color: white;  
+    text-decoration: none; 
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-description button a :hover {
+    background-color: #45a049;
+}
+
+.compartilhar {
+    display: flex; 
+    align-items: center;  
+}
+
+.compartilhar p {
+    margin-right: 10px;  
+}
+
+.compartilhar a {
+    margin-right: 10px;  
+    color: black;
     text-decoration: none;
-    color: inherit;
-    font-size: 1.2em; 
-}
-  
-.card:hover {
-    background: #5d895d;
-    color: #ffffff;
+    font-size: 20px;
 }
 
-.icons-membros {
-    width: 50%;
-    min-width: 180px;
-    margin: auto;
+.container-avaliacao{
     display: flex;
-    justify-content: space-between;
+}
+
+.container-avaliacao p {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.avaliacao {
+    display: flex;
+}
+
+.star-icon{
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 30px;
+    margin: auto;
+}
+
+.star-icon::before{
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before{
+    content:"\2606";
+}
+
+.avaliacao:hover .star-icon::before{
+    content:"\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+    content:"\2606";
 }
 
 footer {
@@ -294,7 +286,6 @@ footer {
     margin-right: 20px;
     font-size: 20px;
 }
-
 .footer-direito ul li {
     text-decoration: none;
     overflow: hidden;

@@ -15,25 +15,25 @@
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
     </section>
@@ -43,25 +43,25 @@
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
         <div class="produto" id="produto1">
             <img src="img/racao-gato-produto.webp" alt="Ração para Cães">
             <h3>Magnus Cat Carne e Frango <br> Gatos Filhotes</h3>
-            <button>Ver Detalhes</button>
+            <button><a href="#">Ver Detalhes</a></button>
         </div>
 
     </section>

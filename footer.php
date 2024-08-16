@@ -16,15 +16,16 @@
                 <li><i class="ph ph-instagram-logo"></i><a href="https://www.instagram.com/agroleme/">Instagram</a></li>
 
                 <li><i class="ph ph-facebook-logo"></i><a href="https://www.facebook.com/share/yzCQa61uTgrcGSAE/?mibextid=qi2Omg">Facebook</a></li>
+
+                <li><i class="ph ph-envelope-simple"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbzPsvPPSmbgpXfWlfcGfCXmjZWlCXFHwGcBCPwGGdxjCqzBDmrSvghRhdZcDMPZtMGDV">agropecuarialeme@bol.com.br</a></li>
                 
                 <li><i class="ph ph-phone"></i>(15) 3257-1279 / (15) 3257-1038</li>
-                <li><i class="ph ph-envelope-simple"></i>agropecuarialeme@bol.com.br</li>
             </ul>
 
 
             <div class="footer-direito-h4">
                 <ul>
-                    <h4><a href="login.html">Faça login e receba todas as novidades!</a></h4>
+                    <h4><a href="login.php">Faça login e receba todas as novidades!</a></h4>
                 </ul>
             </div>
         </div>

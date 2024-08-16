@@ -158,7 +158,7 @@ header{
 .input-field{
     font-size: 15px;
     background: rgba(255, 255, 255, 0.5);
-    color: #fff;
+    color: black;
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
@@ -180,6 +180,9 @@ header{
     position: relative;
     top: -35px;
     left: 17px;
+    color: black;
+}
+.input-box{
     color: black;
 }
 

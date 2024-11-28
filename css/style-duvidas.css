@@ -410,45 +410,6 @@ section {
     font-size: 1rem;
 }
 
-/* .botao {
-    display: flex;
-    margin: auto;
-    justify-content: space-evenly;
-    
-}
-
-.button {
-    padding: 30px 20px;
-    background-color: black;
-    width: 20%;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    margin: 20px;
-}
-
-.button::before{
-    content: '';
-    background-color: #66c735;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: var(--eixoY);
-    left: var(--eixoX);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width .5s, height .5s;
-}
-
-.button:hover::before{
-    width: 1000px;
-    height: 1000px;
-}
-
-.button span{
-    position: relative;
-    z-index: 9999999;
-} */
 
 /* Footer */
 .negrito {
@@ -865,30 +826,12 @@ textarea{
         "5fr 5fr"
         "5fr 5fr";
     }
-    .imagens-home1{
-        grid-area: "hImg1";
-    }
-    .imagens-home2{
-        grid-area: "hImg2";
-    }
-    .imagens-home3{
-        grid-area: "hImg3";
-    }
-    .imagens-home4{
-        grid-area: "hImg4";
-    }
-    .imagens-home{
-        width: 100%;
+    .perguntas{
+        width: 90%;
         margin: auto;
-        margin: 10px;
-        height: 90%;
     }
-    .imagens-home img{
-        height: 100%;
-        width: 100%;
-    }
-    .container{
-        margin-bottom: 0;
+    .pergunta h3{
+        font-size: 18px;
     }
     .footer-baixo-mobile{
         display: grid;

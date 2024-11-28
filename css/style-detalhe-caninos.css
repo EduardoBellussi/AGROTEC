@@ -715,6 +715,23 @@ textarea{
         cursor: pointer;
     }
 
+    .container, .product-details, .product-info{
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+    }
+    .product-description{
+        margin: 0;
+        
+    }
+    .container{
+        width: 80%;
+        padding: 0;
+        margin: auto;
+    }
+    .add-to-cart-btn{
+        margin: auto;
+    }
     .main-mobile{
         background-color: #44742c;
         padding-bottom: 30px;

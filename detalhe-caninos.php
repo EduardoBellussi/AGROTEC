@@ -79,7 +79,7 @@
                         <a href="https://www.instagram.com/"><i class="ph-bold ph-instagram-logo"></i></a>
                     </div>
                     
-                    <button class="add-to-cart-btn ">Adicionar ao carrinho</button>
+                    <button class="add-to-cart-btn">Adicionar ao carrinho</button>
                     <!-- <div class="container-avaliacao">
                         <p>Avalie-nos!</p>
 

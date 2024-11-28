@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    overflow-y: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url("../img/login.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.main-login{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    margin: 0;
+    gap: 10px;
+    grid-area: "titulo";
+}
+
+.titulo > h1{
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.main-login .P1 {
+    color: #405b12;
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+.main-login .P2 {
+    font-size: 3vw;
+    color: #3f3715;
+    font-weight: 600;
+}
+
+.right-login{
+    margin: auto;
+    justify-content: center;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.card-login{
+    width: 35%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #c9c5c591;
+    border-radius: 20px;
+    margin: auto;
+    height: 580px;
+}
+.card-login > h1{
+    color: #405b12;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%
+}
+
+.coluna {
+    gap: 10px;
+    display: flex;
+    width: 150%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}  
+
+.coluna label{
+    color: white;
+}
+
+.coluna > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+
+.coluna > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.coluna > form > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.nome > form > input::placeholder{
+    color: pink;
+}
+
+input::placeholder {
+    color: pink;
+}
+
+.coluna > input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.coluna > label{
+    color: #ffffffde;
+}
+
+.coluna > form > label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+
+
+.formulario{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.formulario label{
+    color: black;
+}
+
+.formulario > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.formulario > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+
+.formulario > form > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formulario > form > input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.formulario > input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.formulario > label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+
+.formulario > form > label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    background: #405b12;
+    box-shadow: 0px 10px 40px -12px #00000052;
+}
+
+.cadastro{
+    color: white;
+    font-size: 1vw;
+}
+
+.cadastro > a{
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+.left-login-img{
+    width: 50vw;
+}
+
+
+@media only screen and (max-width: 950px){
+    .left-login h1 {
+        font-size: 30px;
+    }
+
+    .card-login{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .card-login{
+        width: 60%;
+    }
+
+    .main-login{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-img{
+        width: 40vh;
+        padding-top: 10px;
+    }
+
+    .card-login{
+        width: 90%;
+        height: 95%; 
+        margin-bottom: 10px;
+        box-shadow: 0px 1px 10px #00000056;
+    }
+
+    .cadastro{
+        color: white;
+        font-size: 3vw;
+    }
+
+    .card-login > h1{
+        display: none;
+    }
+    .cadastro > a{
+        font-size: 3vw;
+    }
+}

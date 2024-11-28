@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  margin: auto;
+  background-color: #44742c;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-mobile, .main-mobile, .header-container, .menu-toggle, .menu-header, .mobile-menu {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.main .esquerdo {
+  width: 90%;
+  height: 20%;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.main .esquerdo h1 {
+  margin-bottom: -10px;
+  font-weight: 600;
+}
+
+.main .esquerdo span {
+  font-weight: 200;
+  color: black;
+}
+
+.main .esquerdo p {
+  width: 95%;
+  font-size: large;
+  justify-content: center;
+  text-align: justify;
+}
+
+.main .direita {
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+
+.main .direita img {
+  width: 100%;
+  height: 70%;
+}
+
+nav {
+  position: absolute;
+  top: 10px;
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.submenu-produtos {
+  position: relative;
+}
+
+.submenu-login {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.submenu2 {
+  display: none;
+  position: absolute;
+  margin-left: 180px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.submenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  overflow-y: hidden;
+}
+
+.submenu a:hover{
+  background-color: #44742c;;
+  color: white;
+}
+.submenu2 a:hover{
+  background-color: #44742c;;
+  color: white;
+}
+
+.submenu-produtos:hover .submenu {
+  display: block;
+}
+
+.submenu-login:hover .submenu2 {
+  display: block;
+}
+
+.main-content {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Carrinho */
+.cart-icon {
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+}
+.cart-count {
+  position: absolute;
+  top: -10px; 
+  right: -10px; 
+  background-color: #ff0000; 
+  color: #fff; 
+  font-size: 12px; 
+  padding: 2px 6px; 
+  border-radius: 50%; 
+  font-weight: bold; 
+  display: none; 
+  z-index: 10; 
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  right: 0;
+  color: #0f3813;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.6);
+  background-color: #dbdbdb; 
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0f3813;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #000000;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  cursor: pointer;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidebar.open {
+  width: 500px; 
+}
+.table-cart{
+  width: 100%;
+ padding: 20px;
+}
+.table-cart tr{
+  margin-top: 20px;
+}
+.table-cart-quant{
+  width: 120px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.table-cart-itens{
+  width: 50%;
+  margin-left: 30px;
+  display: flex;
+}
+.table-cart-itens img{width: 100px;}
+.table-cart-itens p{
+  margin-left: 10px;
+  width: 350px;
+}
+.removebtn{
+  color: red;
+  font-size: 50px;
+  cursor: pointer;
+  margin: auto;
+}
+.table-cart-quant button{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.table-cart-quant .quantidade{
+  width: 30px;
+  text-align: center;
+  font-size: 20px
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+
+  thead, tbody {
+      display: block; 
+      width: 100%;
+  }
+
+  thead {
+      border-bottom: 1px solid #0f3813;
+  }
+
+  tbody {
+      margin-top: 20px;
+      max-height: 450px;
+      overflow-y: auto;
+  }
+
+  tbody tr {
+      display: flex; 
+  }
+
+  tbody td {
+      width: calc(100% / 2);
+  }
+
+  
+  tbody::-webkit-scrollbar {
+      width: 8px;
+  }
+
+  tbody::-webkit-scrollbar-thumb {
+      background-color: #2E3E16;
+      border-radius: 10px;
+  }
+
+  tbody::-webkit-scrollbar-track {
+      background-color: #e0e0e0;
+  }
+
+  .sidebar .button-finalizar {
+      display: none; 
+  }
+  
+  .sidebar.open .button-finalizar {
+      display: block; 
+      position: absolute; 
+      bottom: 10px;
+      right: 20px;
+      width: calc(100% - 40px);
+  }
+  
+  button.finalizarCompra {
+      width: 80%;
+      color: white;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      background-color: #44742c;
+      border-radius: 15px;
+      padding: 20px;
+  }
+  
+  button.finalizarCompra:hover {
+      background-color: #4CAF50;
+  }
+
+.custom-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-tooltip::after {
+  content: attr(title); 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px; 
+  white-space: normal;
+  max-width: 200px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  transform: translateY(-50px); 
+  pointer-events: none; 
+  left: -110%; 
+  z-index: 1100;
+}
+
+.custom-tooltip:hover::after {
+  opacity: 1;
+}
+
+/* Main */
+.perfil {
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.perfil:hover {
+  transform: translateY(-5px);
+}
+
+.perfil .perfil-esquerda {
+  flex: 30%;
+  background-color: #e3eaf1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.perfil .perfil-esquerda img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil .perfil-esquerda h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.perfil .perfil-esquerda p {
+  font-size: 16px;
+  color: #777;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.perfil .perfil-direita {
+  flex: 70%;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+.perfil .perfil-direita h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  text-align: center;
+  color: #4CAF50;
+}
+
+.perfil .perfil-direita label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.perfil .perfil-direita input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.perfil .perfil-direita input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.perfil .perfil-direita button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.perfil .perfil-direita button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #44742c;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.negrito {
+  font-weight: bolder;
+}
+
+.footer-esquerdo{
+  width: 35%;
+  text-align: justify;
+  position: relative;
+}
+
+.footer-esquerdo p {
+  margin: 0;
+}
+
+.footer-direito{
+  width: 40%;
+  text-align: left;
+}
+
+.footer-direito ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 5px;
+}
+.footer-direito ul a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-direito ul i {
+  font-size: 20px;
+}
+
+.footer-direito ul li {
+  text-decoration: none;
+  gap: 15px;
+  overflow: hidden;
+  display: flex;
+}
+
+.footer-cima {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  gap:15%;
+}
+
+.footer-baixo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  gap:15%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.footer-baixoE{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: justify;
+}
+
+.box {
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.footer-baixo #comentario.comentario{
+  letter-spacing: 1.2px;
+  cursor: text;
+  font-weight: 800;
+  color: #55595c;
+  border: none;
+  font-size: 12pt;
+  outline: none;
+
+}
+
+textarea{
+  resize: vertical;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+
+.box button {
+  color: white;
+  border: none;
+  padding: 15px;
+  background-color: #8DE324;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.footer-baixoD {
+  width: 40%;
+  overflow-x: hidden;
+  text-align:justify;
+}
+
+.footer-baixoD ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+}
+
+.footer-baixoD ul li {
+      text-decoration: none;
+      overflow: hidden;
+      gap: 10px;
+      display: flex;
+}
+
+.footer-baixoD ul i {
+  font-size: 20px;
+}
+
+
+.footer-baixoD ul li {
+  text-decoration: none;
+  overflow: hidden
+}
+
+.footer-baixoD ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-baixo-mobile {
+  display: none;
+}

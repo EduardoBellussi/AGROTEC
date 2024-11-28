@@ -1,5 +1,32 @@
+<?php 
+    if(!empty($_GET['id'])){
+        require_once("conexao.php");
+        
+        $id = $_GET['id'];
+        $sqlSelect = "SELECT * FROM produto WHERE id=$id";
+
+        $result = $conexao->query($sqlSelect);
+        if($result -> num_rows > 0){
+            while($user_data = mysqli_fetch_assoc($result)){
+                $nome = $user_data['nome'];
+                $img = $user_data['img'];
+                $marca = $user_data['marca'];
+                $linha = $user_data['linha'];
+                $descricao = $user_data['descricao'];
+                $peso = $user_data['peso'];
+                $preco = $user_data['preco'];
+                $preco_novo = $preco - ($preco * 0.10);
+                
+            }
+        }else{
+            header('Location: caninos.php');
+        }
+    }else{
+        header('Location: caninos.php');
+    }
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +35,8 @@
     <link rel="stylesheet" href="css/style-detalhe-caninos.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="js/detalhe-canino.js" defer></script>
+    <link rel="shortcut icon" type="imagex/png" href="img/icon-top.png">
+    <script src="js/header-mobile.js" defer></script>
 </head>
 <body>
     <?php include 'header.php'; ?>
@@ -16,41 +45,42 @@
         <div class="product-details">
             <div class="product-info">
                 <div class="product-image">
-                    <img src="img/racao1-cao-produto.png" alt="racao">
+                <?php
+                    if (!empty($img) && file_exists($img)) {
+                        echo "<img src=\"$img\" alt=\"Imagem do produto\">";
+                    } else {
+                        echo '<p>Nenhuma imagem disponível.</p>';
+                    }                    
+                ?>
+
                 </div>
 
                 <div class="product-description">
-                    <p><strong>Ração Magnus Todo Dia</strong> Cães Adultos Carne Premium</p>
+                    <p><strong>Ração <?php echo $marca . " " . $linha ?></strong> <?php echo $nome ?> -- <strong><?php echo $peso ?></strong></p>
                     <hr>
 
                     <div class='preço'>
-                        <span class='preco-antigo'>R$ 79,90</span>
-                        <span class='preco-novo'>R$ 53,99</span>
+                        <span class='preco-antigo'>R$ <?php echo $preco ?></span>
+                        <span class='preco-novo'>R$ <?php echo $preco_novo ?></span>
                     </div>
 
                     <hr>
-                    <ul>
-                        <li>Bio Complex;</li>
-                        <li>Sem corantes artificiais;</li>
-                        <li>Indicado para cães adultos;</li>
-                        <li>Vitamina E e Selênio Quelato;</li>
-                        <li>Prébioticos, Fibras e Extrato de Yucca.</li>
-                        <li>Ômegas 3 e 6, Biotina e Zinco Quelato;</li>
-                    </ul>
+                    <?php echo $descricao ?>
 
-                    <button><a href="https://wa.me/message/FIXGPLUVZB6AK1">Consultar Estoque</a></button>
+                  
 
                     <div class='compartilhar'>
                         <p>Compartilhe:</p>
-                        <a href="https://web.whatsapp.com/"><i class="ph-bold ph-whatsapp-logo"></i></a>
+                        <a href="https://wa.me/?text=Ol%C3%A1%2C%20estou%20compartilhando%20esta%20p%C3%A1gina%3A%20https%3A%2F%2Fexemplo.com" class="whatsapp-button" target="_blank"><i class="ph-bold ph-whatsapp-logo"></i></a>
                         <a href="https://web.telegram.org/a/"><i class="ph-bold ph-telegram-logo"></i></a>
                         <a href="https://br.pinterest.com/"><i class="ph-bold ph-pinterest-logo"></i></a>
                         <a href="https://x.com/?lang=pt-br"><i class="ph-bold ph-x-logo"></i></a>
                         <a href="https://www.facebook.com/?locale=pt_BR"><i class="ph-bold ph-facebook-logo"></i></a>
                         <a href="https://www.instagram.com/"><i class="ph-bold ph-instagram-logo"></i></a>
                     </div>
-
-                    <div class="container-avaliacao">
+                    
+                    <button class="add-to-cart-btn ">Adicionar ao carrinho</button>
+                    <!-- <div class="container-avaliacao">
                         <p>Avalie-nos!</p>
 
                         <ul class="avaliacao">
@@ -60,7 +90,7 @@
                             <li class="star-icon" data-avaliacao="4"></li>
                             <li class="star-icon" data-avaliacao="5"></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <br>

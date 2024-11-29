@@ -64,9 +64,9 @@ $isUserLoggedIn = isset($_SESSION['email']) && $_SESSION['senha'];
         <button class="finalizarCompra" id="btnFinalizarCompra"
         <?php echo $isUserLoggedIn ? '' : 'disabled'; ?>
         title="<?php echo $isUserLoggedIn ? '' : 'Você precisa estar logado para finalizar a compra.'; ?>"
-    >
-        Finalizar Compra
-    </button>
+        >
+            Finalizar Compra
+        </button>
     </div>
 
     
@@ -92,6 +92,10 @@ $isUserLoggedIn = isset($_SESSION['email']) && $_SESSION['senha'];
         <div class="logo">
             <a href="index.php">Agropecuária Leme</a>
          </div>
+        <a href="javascript:void(0)" class="cart-icon">
+            <i class="ph ph-shopping-cart-simple"></i>
+            <span class="cart-count" style="display: none;">0</span>
+        </a>
     </div>
     
     <nav id="mobile-menu" class="mobile-menu">

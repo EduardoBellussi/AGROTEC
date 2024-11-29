@@ -18,9 +18,13 @@ document.getElementById('btnFinalizarCompra').addEventListener('click', function
 });
 
 // Carrinho
-document.querySelector('.cart-icon').addEventListener('click', function() {
-  document.getElementById("cart-sidebar").classList.add('open');
+document.querySelectorAll('.cart-icon').forEach(function (cartIcon) {
+  cartIcon.addEventListener('click', function () {
+    document.getElementById("cart-sidebar").classList.add('open');
+    console.log('click');
+  });
 });
+
 
 function closeCart() {
   document.getElementById("cart-sidebar").classList.remove('open');

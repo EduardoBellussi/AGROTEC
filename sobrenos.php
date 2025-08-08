@@ -21,7 +21,7 @@
             
             <div class="texto texto-normal">
                 <p>Somos uma empresa dedicada à produção, venda e comercialização de produtos agropecuários. Você pode contar com: Rações, medicamentos, ferramentas, utilidades domésticas e muito mais. Nossa missão é fornecer produtos de alta qualidade para nossos clientes, promovendo o desenvolvimento sustentável da agricultura e pecuária.</p>
-                <p>A história da nossa agropecuária é uma jornada de paixão, dedicação e crescimento contínuo. Começamos como um pequeno empreendimento, com uma visão simples: fornecer alimentos de qualidade enquanto cuidamos da terra e dos animais que nos sustentam.</p>
+                <p>A história da nossa agropecuária é uma jornada de paixão, dedicação e crescimento contínuo. Começamos como um pequeno empreendimento, com uma visão simples:fornecer alimentos de qualidade enquanto cuidamos da terra e dos animais que nos sustentam.</p>
             </div>
             <div class="texto texto-mobile">
                 <p>Somos uma empresa dedicada à produção, venda e comercialização de produtos agropecuários.</p>
